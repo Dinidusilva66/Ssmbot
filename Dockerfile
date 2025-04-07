@@ -13,5 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # project එකේ සියලු files copy කරගන්න
 COPY . .
 
+# port 8000 expose කරයි (health check සදහා)
+EXPOSE 8000
+
 # main.py file එක run කරන command එක
 CMD ["python", "main.py"]
