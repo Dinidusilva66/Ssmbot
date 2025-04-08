@@ -1,0 +1,12 @@
+name: "telegram-bot"
+services:
+  - name: "sinhala-bot"
+    git:
+      repo: "github.com/Dinidusilva66/Ssmbot"
+      branch: "main"
+    build_command: "pip install -r requirements.txt"
+    run_command: "python main.py"
+    port: null  # Don't expose any port
+    routes: []
+    health_check:
+      disable: true
